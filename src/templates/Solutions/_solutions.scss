@@ -1,0 +1,41 @@
+.solution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+
+    &-list {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .card-jussi {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 625px) {
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .solution-list {
+        display: contents;
+
+        .card-jussi {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 15px 0px 15px 0px;
+        }
+    }
+}

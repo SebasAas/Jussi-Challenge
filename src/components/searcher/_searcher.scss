@@ -1,0 +1,23 @@
+.searcher {
+    display: flex;
+    align-items: center;
+    border: 1px solid $c-grey-two;
+    border-radius: 20px;
+
+    input {
+        border: none;
+        margin: 5px 5px 5px 20px;
+    }
+
+    &-icon {
+        padding: 0px 15px 3px 0px;
+
+        img {
+            padding-left: 28px;
+        }
+    }
+
+    ::placeholder {
+        color: $c-pink;
+    }
+}

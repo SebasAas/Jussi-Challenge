@@ -1,0 +1,99 @@
+.newsletter {
+    background-color: $c-black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &-container {
+        padding: 150px;
+
+        &-text {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        &-input {
+            display: flex;
+            justify-content: center;
+            margin-left: 100px;
+            form {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+
+                input {
+                    background-color: transparent;
+                    outline: 0;
+                    border-width: 0 0 1px;
+                    border-color: $c-green;
+                    padding: 0px 0px 10px 0px;
+                    width: 80%;
+                    color: white;
+                }
+                input:focus {
+                    // border-color: green;
+                }
+
+                ::placeholder {
+                    padding-bottom: 10px;
+                    color: white;
+                }
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                    color: $c-green;
+                    padding-bottom: 10px;
+                    text-transform: uppercase;
+                    position: relative;
+                    right: 100px;
+                }
+            }
+        }
+
+        h1 {
+            color: $c-white;
+            font-size: 32px;
+            line-height: 40px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: $c-green;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .newsletter-container {
+        padding: 50px 0px;
+
+        h1 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        &-input {
+            margin-left: 0px;
+            align-items: center;
+
+            form {
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                button {
+                    margin-top: 15px;
+                    right: auto;
+                }
+            }
+        }
+    }
+}
