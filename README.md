@@ -20,16 +20,20 @@ To build in production mode
 npm run build
 ```
 
+### Usage
+The API will return only movies, you can search any movie in the search option
+
 ### Live site
 URL Live Site
 ```
-https://604b015eb3fc0900078ac55a--determined-ramanujan-66ae03.netlify.app/
+* [Jussi](https://604b015eb3fc0900078ac55a--determined-ramanujan-66ae03.netlify.app/)
 ```
 ### Built With
 * [React](https://pt-br.reactjs.org/) - Used as a web framework 
 * [Webpack](https://webpack.js.org/) - Used to bundle assets
 * [Sass](https://rometools.github.io/rome/) - Used to style sheets
 * [Framer Motion](https://www.framer.com/api/motion/) - Used to animate
+* [OMDb API](http://www.omdbapi.com/) - Used to fetch data
 * [Netlify](https://www.netlify.com/) - Used to deploy the app 
 
 ### Versioning
