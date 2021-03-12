@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 // Images
 import Batedera from '../../assets/images/batedera.png';
 import Geladeira from '../../assets/images/geladeira.png';
-import Wiskey from '../../assets/images/Wiskey.png';
+import Wiskey from '../../assets/images/wiskey.png';
 
 function ProductBannerC3() {
 
