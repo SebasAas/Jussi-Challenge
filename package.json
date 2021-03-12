@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config config/webpack.config.js",
-    "devserve": "webpack serve --config config/webpack.config.js",
+    "start": "webpack --config config/webpack.dev.js",
+    "devserver": "webpack serve --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -34,6 +35,7 @@
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   }
 }
