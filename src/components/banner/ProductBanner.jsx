@@ -28,7 +28,7 @@ function ProductBannerC3() {
                 transition={{ duration: 0.2, }}
                 className="product product-1">
                 <img src={Geladeira} alt="Geladeira" />
-                <button className="btn btn-roundered mt-3">Mais Detalhe</button>
+                <button className="btn product-btn">Mais Detalhe</button>
             </motion.div>
             <motion.div
                 initial={initial}
@@ -36,7 +36,7 @@ function ProductBannerC3() {
                 transition={{ duration: 0.4 }}
                 className="product product-2" >
                 <img src={Wiskey} alt="Wiskey" />
-                <button className="btn btn-roundered mt-3">Adicionar á sacola</button>
+                <button className="btn product-btn">Adicionar á sacola</button>
             </motion.div>
             <motion.div
                 initial={initial}
@@ -44,7 +44,7 @@ function ProductBannerC3() {
                 transition={{ duration: 0.6 }}
                 className="product product-3" >
                 <img src={Batedera} alt="Batedera" />
-                <button className="btn btn-roundered mt-3">Comprar en 12x</button>
+                <button className="btn product-btn">Comprar en 12x</button>
             </motion.div>
         </div>
     )
