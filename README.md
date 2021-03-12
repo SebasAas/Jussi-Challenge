@@ -25,9 +25,8 @@ The API will return only movies, you can search any movie in the search option
 
 ### Live site
 URL Live Site
-```
-* [Jussi](https://604b015eb3fc0900078ac55a--determined-ramanujan-66ae03.netlify.app/)
-```
+ * [Jussi](https://604b015eb3fc0900078ac55a--determined-ramanujan-66ae03.netlify.app/)
+
 ### Built With
 * [React](https://pt-br.reactjs.org/) - Used as a web framework 
 * [Webpack](https://webpack.js.org/) - Used to bundle assets
