@@ -17,7 +17,8 @@ const useFetch = () => {
                 setIsLoading(false)
                 setError(null)
             } catch (error) {
-                setError(error);
+                console.log(error)
+                // setError(error);
                 setResponse(null);
                 setIsLoading(false)
             }

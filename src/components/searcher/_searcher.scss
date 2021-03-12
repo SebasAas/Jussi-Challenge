@@ -81,11 +81,14 @@
         &-body {
             display: flex;
             flex-direction: column;
-            overflow-y: scroll;
 
             div {
                 width: 100%;
                 justify-content: space-around;
+
+                img {
+                    max-width: 130px;
+                }
             }
 
             p {

@@ -66,46 +66,50 @@ function Searcher() {
       {
         openResult ?
           <div className="searcher-result">
-            {/* isLoading */}
             {
               isLoading ?
                 <div className="searcher-loaderdots">
                   <LoaderDots />
                 </div>
-
                 :
                 <div className="searcher-result-form">
-                  <div className="searcher-form-header">
-                    <p>Resultados: {response?.Search.length}</p>
-                    <span onClick={() => closeModal()}>X</span>
-                  </div>
-                  <div className="searcher-form-body">
-                    <div className="form-body-col">
-                      <span>Imagem</span>
-                      <span>Titulo</span>
-                      <span>Ano</span>
-                    </div>
-                    {response?.Search.map(item => (
-                      <div>
-                        <img src={item.Poster} alt="img" />
-                        <p>{item.Title}</p>
-                        <span>{item.Year}</span>
+
+                  {response !== null && !response.Error ?
+                    <>
+                      <div className="searcher-form-header">
+                        <p>Resultados: {response.Search.length}</p>
+                        <span onClick={() => closeModal()}>X</span>
                       </div>
-                    ))}
-                  </div>
-                  <div className="searcher-form-footer">
-                    <a href="#">Mais Produtos</a>
-                  </div>
+                      <div className="searcher-form-body">
+                        <div className="form-body-col">
+                          <span>Imagem</span>
+                          <span>Titulo</span>
+                          <span>Ano</span>
+                        </div>
+                        {response.Search.map(item => (
+                          <div>
+                            <img src={item.Poster} alt="img" />
+                            <p>{item.Title}</p>
+                            <span>{item.Year}</span>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="searcher-form-footer">
+                        <a href="#">Mais Produtos</a>
+                      </div>
+                    </>
+                    :
+                    <div>
+                      <h1 style={{ width: '100%', textAlign: "center" }}>{response?.Error}</h1>
+                    </div>
+                  }
                 </div>
             }
-
           </div>
           :
           null
-
       }
-
-    </div>
+    </div >
 
   )
 }
