@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Template
-import Header from '../../templates/Header/header'
+import Header from '../../templates/Header/Header'
 import Footer from '../../templates/Footer/Footer'
 import OurClients from '../../templates/Clients/Clients'
 import Solutions from '../../templates/Solutions/Solutions'
