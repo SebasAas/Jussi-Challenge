@@ -1,0 +1,45 @@
+.banner
+  &-comercial
+    background-color: $c-pink
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+
+    &-container
+      padding: 100px
+
+      h1,
+      h2,
+      p
+        color: white
+
+        h1
+          text-transform: uppercase
+          font-weight: bold
+          font-size: 32px
+          line-height: 40px
+          margin-bottom: 40px
+
+          h2
+            font-weight: 500
+            font-size: 32px
+            line-height: 24px
+
+            p
+              font-style: normal
+              font-weight: 500
+              font-size: 16px
+              line-height: 24px
+
+@media screen and (max-width: 576px)
+  .banner-comercial-container
+    padding: 50px 0px
+
+    h1
+      font-size: 24px
+      line-height: 30px
+
+      h2
+        font-size: 24px

@@ -1,0 +1,138 @@
+.banner
+    min-height: 80vh
+    &-top
+        overflow: hidden
+        background-color: $c-green
+
+    &-description
+        display: flex
+        height: 100%
+        padding-top: 40px
+
+        &-icon
+            margin-right: 40px
+            h1
+                color: $c-white
+
+        h1
+            font-size: 64px
+            line-height: 77px
+            text-transform: uppercase
+
+        p
+            font-weight: 500
+            font-size: 16px
+            line-height: 24px
+
+        button
+            background-color: transparent
+            padding: 10px 35px
+            border: 2px solid $c-black
+            border-radius: 10px
+
+        &-description
+            margin-top: 40px
+
+    &-destaque
+        &-images
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            .product
+                display: flex
+                justify-content: center
+                flex-direction: column
+                margin: 0px 10px
+                padding: 15px
+                width: 209px
+                height: 271px
+                background: $c-white
+                border: 1px solid $c-grey-one
+                box-sizing: border-box
+                box-shadow: 0px 32px 32px rgba(0, 0, 0, 0.25)
+                border-radius: 8px
+                position: relative
+
+                button
+                    cursor: pointer
+                    border-radius: 40px
+                    background: linear-gradient(45deg, #fff 50%, $c-pink 50%)
+                    background-clip: text
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    position: relative
+                    color: $c-pink
+                    border: 1px solid $c-pink
+                    padding: 10px
+                    margin-top: 5px
+
+                button:after
+                    content: ""
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    left: 0
+                    right: 0
+                    border-radius: 40px
+                    background: linear-gradient(45deg, $c-pink 50%, transparent 50%)
+                    z-index: -1
+
+                button,
+                button:after
+                    background-size: 300%
+                    background-position: 100%
+                    transition: 1s, font-size 0.2s
+
+                button:hover,
+                button:hover:after
+                    background-position: 0
+                    font-size: 1.1em
+                    border-radius: 40px
+                    color: $c-pink /*For IE*/
+
+                &-1
+                    top: 90px
+
+                &-2
+                    top: 160px
+                    left: 30px
+
+                &-3
+                    right: 330px
+                    bottom: 40px
+
+                img
+                    object-fit: none
+
+    &-desc
+        margin-top: 40px
+
+@media screen and (max-width: 992px)
+    .banner
+        &-container
+            min-height: auto
+            height: auto
+
+        &-description
+            padding-top: 0px
+
+        &-top
+            height: 100%
+
+        &-destaque-images
+            display: flex
+            justify-content: space-between
+            align-items: center
+            position: initial
+            margin-bottom: 80px
+
+            .product
+                position: inherit
+
+@media (max-width: 768px)
+    .banner-destaque-images
+        display: none
+
+    .banner-description
+        flex-direction: column

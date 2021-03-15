@@ -1,0 +1,51 @@
+.clients
+  height: 10vh
+  background-color: $c-grey-two
+  display: flex
+
+  &-container
+    height: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+
+    &-desc
+      display: flex
+      justify-content: space-around
+      align-items: center
+
+      div
+        padding-left: 30px
+
+        &-images
+          display: flex
+          justify-content: space-between
+
+          img
+            object-fit: contain
+            margin-left: 30px
+            margin-right: 30px
+
+        p
+          margin: 0
+
+    &-images
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+
+@media screen and (max-width: 992px)
+  .clients-container
+    flex-direction: column
+
+    &-images
+      width: 90%
+      display: flex
+      justify-content: space-between
+      overflow-x: scroll
+
+      img
+        object-fit: contain
+        margin-left: 30px
+        margin-right: 30px

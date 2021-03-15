@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-// SCSS
-import './scss/index.scss'
+// SASS
+import './sass/index.sass'
 
 // Components
 import App from './App'
