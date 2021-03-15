@@ -66,6 +66,9 @@ function Searcher() {
       {
         openResult ?
           <div className="searcher-result">
+            <div style={{ width: '100%', display: 'flex', justifyContent: 'flex-end' }}>
+              <span onClick={() => closeModal()}>X</span>
+            </div>
             {
               isLoading ?
                 <div className="searcher-loaderdots">
@@ -78,7 +81,6 @@ function Searcher() {
                     <>
                       <div className="searcher-form-header">
                         <p>Resultados: {response.Search.length}</p>
-                        <span onClick={() => closeModal()}>X</span>
                       </div>
                       <div className="searcher-form-body">
                         <div className="form-body-col">
