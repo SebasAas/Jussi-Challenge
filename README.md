@@ -34,8 +34,3 @@ URL Live Site
 * [Framer Motion](https://www.framer.com/api/motion/) - Used to animate
 * [OMDb API](http://www.omdbapi.com/) - Used to fetch data
 * [Netlify](https://www.netlify.com/) - Used to deploy the app 
-
-### Versioning
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-### Authors
-* **Sebastian Soplan**
